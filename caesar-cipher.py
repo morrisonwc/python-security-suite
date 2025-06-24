@@ -16,11 +16,11 @@ def encrypt(file_name, offset):
     user_file = open(file_name, "r")
     file_text = user_file.read()
     
-    for ch in file_text.lower():
-        if (ch in punctuation):
-            encrypted_file.write(ch)
+    for char in file_text.lower():
+        if (char in punctuation):
+            encrypted_file.write(char)
         else:
-            index = alphabet.find(ch)
+            index = alphabet.find(char)
             new_index = (index + offset) % len(alphabet)
             encrypted_file.write(alphabet[new_index])
 
@@ -39,11 +39,11 @@ def decrypt(file_name, offset):
     user_file = open(file_name, "r")
     file_text = user_file.read()
     
-    for ch in file_text.lower():
-        if (ch in punctuation):
-            decrypted_file.write(ch)
+    for char in file_text.lower():
+        if (char in punctuation):
+            decrypted_file.write(char)
         else:
-            index = alphabet.find(ch)
+            index = alphabet.find(char)
             new_index = (index - offset) % len(alphabet)
             decrypted_file.write(alphabet[new_index])
 
