@@ -1,7 +1,4 @@
-# classical-ciphers
-This is a collection of Python programs that encrypt and decrypt text files using classical ciphers, like Caesar and Vigenère Ciphers.
+# security-sute
+This is a collection of Python programs that are basic programs for securing information. The classical-ciphers folder is a collection of programs that encrypt and decrypt text files using ciphers, like the Caesar cipher. 
 
-The first program is the Caesar cipher.
-
-
-The second program is the Vigenere cipher.
+The password-generation programs are excercises in Python closures. Those programs will help generate secure passwords according to the user's needs. 
